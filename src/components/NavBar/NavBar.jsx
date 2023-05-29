@@ -1,8 +1,18 @@
-import React from 'react'
+import {useState, useEffect} from 'react'
 import CartWidget from '../CartWidget/CartWidget'
 import './NavBar.css'
 
 const NavBar = () => {
+  const [categoria, setCategoria] = useState("");
+
+  useEffect( ()=> {
+    document.title = `Categoría: ${categoria}`;
+}, [categoria])
+
+  const handleClick = (categoria) => {
+    setCategoria(categoria);
+  };
+
   return (
     <header>
         <h1 >Planet Rock</h1>
@@ -10,13 +20,13 @@ const NavBar = () => {
         <nav>
           <ul className="indice">
             <li>
-              <button className="guitarras">Guitarras</button>
+            <button onClick={() => handleClick("Guitarras")}>Guitarras</button>
             </li>
             <li>
-              <button className="bajos">Bajos</button>
+            <button onClick={() => handleClick("Bajos")}>Bajos</button>
             </li>
             <li>
-              <button className="amplificadores">Amplificadores</button>
+            <button onClick={() => handleClick("Amplificadores")}>Amplificadores</button>
             </li>
           </ul>
         </nav>
