@@ -38,7 +38,7 @@ const ItemCount = ({ inicial, stock }) => {
     <div>
       <button onClick={disminuir}>-</button>
       <p>{contador}</p>
-      <button onClick={incrementar}>+</button>
+      <button onClick={incrementar} >+</button>
 
       <button onClick={agregarAlCarrito} style={{color:color}}>
         Agregar al carro
