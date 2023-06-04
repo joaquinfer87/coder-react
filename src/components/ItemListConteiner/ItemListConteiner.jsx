@@ -6,9 +6,18 @@ import {getProductos} from '../../asyncmock'
 const ItemListConteiner = (props) => {
   const [productos, setProductos] = useState ([])
   useEffect (()=>{
-    getProductos ()
-    .then(respuesta => setProductos(respuesta))
-    .catch (error => console.log(error))
+    // getProductos ()
+    // .then(respuesta => setProductos(respuesta))
+    // .catch (error => console.log(error))
+
+    const pedirDatos = async () => {
+      const inventarioProductos = await getProductos();
+      setProductos(inventarioProductos);
+      console.log("holamundo")
+      
+  }
+
+  console.log(pedirDatos());
 
   },[])
   return (

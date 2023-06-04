@@ -3,19 +3,22 @@ import CartWidget from '../CartWidget/CartWidget'
 import './NavBar.css'
 
 const NavBar = () => {
+  
   const [categoria, setCategoria] = useState("");
-
+ 
   useEffect( ()=> {
-    document.title = `Categoría: ${categoria}`;
+
+    
 }, [categoria])
 
   const handleClick = (categoria) => {
     setCategoria(categoria);
+    document.title = `Categoría: ${categoria}`;
   };
-
+  
   return (
     <header>
-        <h1 >Planet Rock</h1>
+       <img className ="logo" src="./img/logo.png" alt="Logo" />
         
         <nav>
           <ul className="indice">
