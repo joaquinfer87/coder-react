@@ -1,7 +1,8 @@
 .cardProducto {
-    background-color: #d43b3b6e;
+    background-color: #d43b3b;
     border-radius: 10px;
     width: 15rem;
+    height: 25rem;
     padding: 1rem;
     margin: 1rem;
     display: flex;
@@ -10,17 +11,22 @@
 }
 
 .imgProducto {
-    width: 250px;
-
-    border:1px solid #000000;
+    width: 15rem;
+    margin-top:  1rem ;
+    background-color: #d43b3b ;
     object-fit: contain;
 }
 
-.info{
+.infoContainer{
 
     display: flex;
     flex-direction: column;
-    align-self: start;
-    gap: 10 px;
+   
+
+}
+
+.info{
+    display: flex;
+    justify-content: space-between;
 
 }

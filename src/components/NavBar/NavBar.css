@@ -18,7 +18,8 @@ h1 {
 button {
   background-color: #000;
   border-radius: 10px;
-  border-style: dashed;
+  border-style: solid;
+  
   color: #d83232;
   
  

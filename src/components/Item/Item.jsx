@@ -1,21 +1,23 @@
 // import Hooks from '../Hooks/Hooks'
-import './Item.css'
 
-const Item = ({ nombre, precio,img, }) => {
+import "./Item.css";
+import { Link } from "react-router-dom";
+
+const Item = ({ id,nombre, precio, img }) => {
   return (
-    <div className='cardProducto'>
-        <img className='imgProducto' src={img} alt={nombre}/>
-        <div className='info'>
-        <h3>Nombre: {nombre} </h3>
-        <p>precio {precio}</p>
-        {/* <Hooks /> */}
-        <button className='BtnProducto'>DETALLES</button>
-        </div>
-      
-       
-        
-    </div>
-  )
-}
+    <div className="cardProducto">
+      <img className="imgProducto" src={img} alt={nombre} />
+      <div className="infoContainer">
+        <h3>{nombre} </h3>
 
-export default Item
+        <div className="info">
+          <strong>precio {precio}</strong>
+          
+          <button><Link to={`/item/${id}`}> Ver Detalles </Link></button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Item;
