@@ -1,5 +1,5 @@
 .cardProducto {
-    background-color: #c40d0d;
+    background-color: #d43b3b6e;
     border-radius: 10px;
     width: 15rem;
     padding: 1rem;
@@ -10,7 +10,17 @@
 }
 
 .imgProducto {
-    width: 150px;
+    width: 250px;
+
+    border:1px solid #000000;
     object-fit: contain;
 }
 
+.info{
+
+    display: flex;
+    flex-direction: column;
+    align-self: start;
+    gap: 10 px;
+
+}
