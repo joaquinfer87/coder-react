@@ -8,21 +8,21 @@ const NavBar = () => {
       <Link to={"/"}>
         <img className="logo" src="../img/logo.png" alt="Logo" />
       </Link>
-      <nav>
-        <ul className="indice">
+      <nav className="indice">
+        <ul >
           <li>
             <NavLink to={"/categoria/1"}>
-              <button>Guitarras</button>
+              <button><strong>Guitarras</strong></button>
             </NavLink>
           </li>
           <li>
             <NavLink to={"/categoria/2"}>
-              <button>Bajos</button>
+              <button><strong>Bajos Electricos</strong></button>
             </NavLink>
           </li>
           <li>
             <NavLink to={"/categoria/3"}>
-              <button>Amplificadores</button>
+              <button><strong>Amplificadores</strong></button>
             </NavLink>
           </li>
         </ul>

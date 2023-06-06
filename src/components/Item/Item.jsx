@@ -9,11 +9,9 @@ const Item = ({ id,nombre, precio, img }) => {
       <img className="imgProducto" src={img} alt={nombre} />
       <div className="infoContainer">
         <h3>{nombre} </h3>
-
         <div className="info">
-          <strong>precio {precio}</strong>
-          
-          <button><Link to={`/item/${id}`}> Ver Detalles </Link></button>
+          <strong>Precio: ${precio}</strong>
+          <Link to={`/item/${id}`}><button className="bdetalle"><strong> Ver Detalles</strong> </button></Link>
         </div>
       </div>
     </div>

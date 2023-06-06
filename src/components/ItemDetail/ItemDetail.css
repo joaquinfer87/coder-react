@@ -1,11 +1,28 @@
-.DetalleItem {
+.cardDetalle {
     background-color: #d43b3b;
     border-radius: 10px;
-    width: 15rem;
-    padding: 1rem;
-    margin: 1rem;
+    width: 75%;
+    height: 30rem;
+    margin: 10rem;
     display: flex;
-    flex-direction: column;
     align-items: center;
+    justify-content: space-between;
+    
 }
 
+.infoDetalle{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.imgDetalle{
+    height: 75%;
+    
+}
+
+h2{
+    color: black;
+}
