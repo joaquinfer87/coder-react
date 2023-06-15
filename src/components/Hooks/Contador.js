@@ -1,7 +1,9 @@
 import { useState } from "react";
 
-export const useCount = (inicial, stock ) => {
+export const useCount = (inicial, stock,  ) => {
   const [contador, setcontador] = useState(inicial);
+
+
 
   const incrementar = () => {
     if (contador < stock) {

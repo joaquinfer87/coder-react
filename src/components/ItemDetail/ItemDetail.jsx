@@ -1,7 +1,7 @@
 import "./ItemDetail.css";
 import Hooks from "../Hooks/Hooks";
 
-const ItemDetail = ({ id, nombre, precio, img, detalle }) => {
+const ItemDetail = ({  nombre, precio, img, detalle }) => {
   return (
     <div className="cardDetalle">
       <img className="imgDetalle" src={img} alt={nombre} />
